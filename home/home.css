@@ -1,0 +1,260 @@
+/* home.css */
+
+body {
+    font-family: 'Merienda', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.news-section h3{
+    color: #7d1a09;
+    font-size: 2em;
+}
+
+#sobre {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #7d1a09;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header .banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .avatar-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+}
+
+.image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #7d1a09;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+footer {
+    background-color: #7d1a09;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    color: #fff;
+    margin-top: 0;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+.menu {
+    background-color: #7d1a09;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #f08141;
+}
+
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+}
+.news-section {
+    padding: 60px 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.news-item {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul.menu-items {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu h1 {
+        display: none;
+        margin: 0;
+        font-size: 21px;
+        position: fixed;
+        left: 1%;
+        color: #ddd;
+    }
+ }
+
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1 {
+    margin: 0;
+    font-size: 21px;
+    position: fixed;
+    left: 1%;
+    color: #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+}
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top; /* Para alinhar os retângulos ao topo */
+}
+.rectangle {
+    width: auto; /* Definido como automático para ajustar ao conteúdo */
+    max-width: 400px;
+    border: 1px solid #333;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px; /* Espaçamento entre os retângulos */
+    transition: height 0.3s ease;
+    border-radius: 5px;
+}
+.rectangle img {
+    width: 100%;
+    height: 225px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    display: block;
+}
+.rectangle .content {
+    background: #563929;
+    color: white;
+    padding: 5px;
+}
+.rectangle h3 {
+    margin: 5px 0;
+}
+.rectangle .text {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    display: none;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+.expanded .text {
+    width: 333px;
+    display: block;
+    opacity: 1;
+}
+
+.rectangle h3 a {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.rectangle h3 a:hover {
+    color: #f08141;
+}
+
+.menu h3{
+    margin: 0;
+    font-size: 21px;
+    position: fixed;
+    right: 1%;
+
+}
