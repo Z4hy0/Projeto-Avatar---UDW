@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 localStorage.setItem('email', email);
                 localStorage.setItem('senha', senha);
-                window.location.href = "/cadastrologin/login.html";
+                window.location.href = "login.html";
             }
         });
     }
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if(email !== emailSalvo || senha !== senhaSalva){
                 alert('As senhas informadas estão divergentes.');
             } else {
-                window.location.href = "/home/home.html";
+                window.location.href = "index.html";
             }
         });
     }
